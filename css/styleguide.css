@@ -1,0 +1,263 @@
+:root {
+	--dark: #34314c;
+	--white: #ffffff;
+	--dark-sky-blue: #47b8e0;
+	--light-gold: #ffc952;
+	--salmon: #ff7473;
+	--white-50: rgba(255, 255, 255, 0.5);
+}
+
+#container {
+	width:100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: 300;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+	margin-top: 10px;
+	line-height: 42px;
+}
+
+h2 {
+	font-family: Roboto;
+	font-size: 48px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+}
+
+h2 a {
+	font-family: Roboto;
+	font-size: 48px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+}
+
+h3 {
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+}
+
+
+#cover {
+	width: 100%;
+	height: 800px;
+	background-image: url("../img/morrow_working_filter.jpg");
+	background-position: center;
+	overflow: hidden;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+#navbar {
+	margin-top: 46px;
+	margin-right: 8.333%;
+	float: right;
+}
+
+ul {
+	list-style-type: none;
+}
+ul .nav-item {
+	float: left;
+}
+
+.nav-item a {
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: bold;
+	font-stretch: condensed;
+	text-align: center;
+	color: #34314c;
+	color: var(--dark);
+	display: block;
+	width: 110px;
+
+}
+
+
+#intro {
+	width: 600px;
+	margin-left: 8.333%;
+	margin-top: 520px;
+}
+
+.big-title {
+	font-family: Roboto;
+	font-size: 72px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+}
+
+.section-break {
+	height: 300px;
+	width: 100%;
+	background-color: #34314c;
+	background-color: var(--dark);
+}
+
+.section-wrapper {
+	display: table;
+	width: 60%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-title {
+	font-family: Roboto;
+	font-size: 64px;
+	line-height: 75px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #ffffff;
+	color: var(--white);
+	float: none;
+	height: 100%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.section-skills {
+	height: 940px;
+	background-color: #ffffff;
+	background-color: var(--white);
+}
+
+.skill{
+	margin-top: 10px;
+	width: 100%;
+	height: 300px;
+	display: inline;
+}
+
+.skill-block {
+	margin-top: 10px;
+	width: 32.7%;
+	height: 300px;
+	overflow: hidden;
+	float: left;}
+
+.skill-pic {
+	min-width: 100%;
+	min-height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.skill-margin {
+	margin-left: 10px; 
+	margin-right: 10px;
+}
+
+.skill-info-wrapper {
+	display: table;
+	width: 60%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.skill-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.skill-title {
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #ffffff;
+	color: var(--white);
+}
+
+.skill-details {
+	font-family: OpenSans;
+	font-size: 18px;
+	margin-top: 5px;
+	line-height: 1.44;
+	color: #ffffff;
+	color: var(--white);
+}
+
+#section-projects {
+	width: 100%;
+	height: 940px;
+	background-color: #34314c;
+	background-color: var(--dark);
+	overflow: auto;
+}
+
+.project {
+	width: 100%;
+	height: 300px;
+	margin-top: 10px;
+	background-color: #ffffff;
+	background-color: var(--white);
+}
+
+.project-image-block {
+	width: 66.319%;
+	height: 300px;
+	overflow: hidden;
+	float: left;
+}
+
+.project img {
+	min-width: 100%;
+	min-height: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.project-block {
+	width: 33.681%;
+	height: 300px;
+	float: left;
+}
+
+.project-info-wrapper {
+	display: table;
+	width: 60%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.body-text {
+	font-family: OpenSans;
+	font-size: 18px;
+	line-height: 1.44;
+	color: #34314c;
+	color: var(--dark);
+	margin-top: 10px;
+}
+
+#section-contact {
+	width: 100%;
+	height: 300px;
+	background-color: #ffffff;
+	background-color: var(--white);
+}
