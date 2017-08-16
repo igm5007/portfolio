@@ -63,32 +63,6 @@ h3 {
 	transform: translateX(-50%);
 }
 
-#navbar {
-	margin-top: 46px;
-	margin-right: 8.333%;
-	float: right;
-}
-
-ul {
-	list-style-type: none;
-}
-ul .nav-item {
-	float: left;
-}
-
-.nav-item a {
-	font-family: "Roboto", sans-serif;
-	font-size: 24px;
-	font-weight: bold;
-	font-stretch: condensed;
-	text-align: center;
-	color: #34314c;
-	color: var(--dark);
-	display: block;
-	width: 110px;
-
-}
-
 #intro {
 	width: 600px;
 	margin-left: 8.333%;
@@ -312,23 +286,6 @@ ul .nav-item {
 }
 
 @media only screen and (max-device-width : 768px) {
-
-	#navbar {
-		margin-top: 4.1665%;
-		margin-left: 4.1665%;
-		float: left;
-	}
-
-	ul .nav-item {
-		float: left;
-		width: 100%;
-		margin-top: 10px;
-	}
-
-	.nav-item a {
-		width: 110px;
-		text-align: left;
-	}
 
 	.intro-text {
 		visibility: hidden;
