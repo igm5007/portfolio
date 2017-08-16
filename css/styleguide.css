@@ -8,15 +8,16 @@
 }
 
 #container {
-	width:100%;
+	max-width:100%;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 
 h1 {
-	font-family: Roboto;
-	font-size: 36px;
+	font-family: "Roboto", sans-serif;
+	font-size: 2.25em;
 	font-weight: 300;
 	font-stretch: condensed;
 	color: #34314c;
@@ -26,7 +27,7 @@ h1 {
 }
 
 h2 {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 48px;
 	font-weight: bold;
 	font-stretch: condensed;
@@ -35,7 +36,7 @@ h2 {
 }
 
 h2 a {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 48px;
 	font-weight: bold;
 	font-stretch: condensed;
@@ -44,14 +45,13 @@ h2 a {
 }
 
 h3 {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	font-stretch: condensed;
 	color: #34314c;
 	color: var(--dark);
 }
-
 
 #cover {
 	width: 100%;
@@ -77,7 +77,7 @@ ul .nav-item {
 }
 
 .nav-item a {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
 	font-stretch: condensed;
@@ -89,7 +89,6 @@ ul .nav-item {
 
 }
 
-
 #intro {
 	width: 600px;
 	margin-left: 8.333%;
@@ -97,7 +96,7 @@ ul .nav-item {
 }
 
 .big-title {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 72px;
 	font-weight: bold;
 	font-stretch: condensed;
@@ -122,7 +121,7 @@ ul .nav-item {
 }
 
 .section-title {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 64px;
 	line-height: 75px;
 	font-weight: bold;
@@ -159,7 +158,26 @@ ul .nav-item {
 	width: 32.667%;
 	height: 300px;
 	overflow: hidden;
-	float: left;}
+	float: left;
+}
+
+.skill-block-dis-one {
+	margin-top: 1%;
+	width: 32.667%;
+	height: 300px;
+	overflow: hidden;
+	float: left;
+}
+
+.skill-block-dis-two {
+	margin-top: 1%;
+	width: 32.667%;
+	height: 300px;
+	overflow: hidden;
+	float: left;
+}
+
+
 
 .skill-pic {
 	min-width: 100%;
@@ -187,7 +205,7 @@ ul .nav-item {
 }
 
 .skill-title {
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	font-stretch: condensed;
@@ -196,7 +214,7 @@ ul .nav-item {
 }
 
 .skill-details {
-	font-family: OpenSans;
+	font-family: "OpenSans", sans-serif;
 	font-size: 18px;
 	margin-top: 5px;
 	line-height: 1.44;
@@ -215,13 +233,13 @@ ul .nav-item {
 .project {
 	width: 100%;
 	height: 300px;
-	margin-top: 10px;
+	margin-top: 1%;
 	background-color: #ffffff;
 	background-color: var(--white);
 }
 
 .project-image-block {
-	width: 66.319%;
+	width: 66.334%;
 	height: 300px;
 	overflow: hidden;
 	float: left;
@@ -235,7 +253,7 @@ ul .nav-item {
 }
 
 .project-block {
-	width: 33.681%;
+	width: 33.667%;
 	height: 300px;
 	float: left;
 }
@@ -254,7 +272,7 @@ ul .nav-item {
 }
 
 .body-text {
-	font-family: OpenSans;
+	font-family: "OpenSans", sans-serif;
 	font-size: 18px;
 	line-height: 1.44;
 	color: #34314c;
@@ -270,3 +288,111 @@ ul .nav-item {
 	float: left;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.skill-block {
+		width: 49%;
+	}
+
+	.skill-block-dis-one {
+		width: 0%;
+	}
+
+	.skill-block-dis-two {
+		width: 49%;
+	}
+
+	.project-image-block {
+		width: 49%;
+	}
+
+	.project-block {
+		width: 49%;
+	}
+
+}
+
+@media only screen and (max-device-width : 768px) {
+
+	#navbar {
+		margin-top: 4.1665%;
+		margin-left: 4.1665%;
+		float: left;
+	}
+
+	ul .nav-item {
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.nav-item a {
+		width: 110px;
+		text-align: left;
+	}
+
+	.intro-text {
+		visibility: hidden;
+	}
+	#intro {
+		width: 80%;
+		margin-left: 4.1665%;
+		margin-top: 125%;
+	}
+
+	.section-break {
+		height: 0%;
+		width: 0%;
+
+	}
+
+	.section-skills {
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		background-color: var(--white);
+		float: left;
+		margin-bottom: 1%;
+	}
+
+	.section-skills-wrapper {
+		height: 100%;
+		width: 100%;
+	}
+
+	.skill-block {
+		width: 100%;
+	}
+
+	.skill-block-dis-one {
+		width: 0%;
+
+	}
+
+	.skill-block-dis-two {
+		width: 0%;
+
+	}
+
+	.skill-margin {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.project-image-block {
+		width: 0%;
+	}
+
+	.project-block {
+		width: 100%;
+	}
+
+	#cover {
+		width: 100%;
+		height: 650px;
+		background-image: url("../img/morrow_working_filter.jpg");
+		background-position: center;
+		overflow: hidden;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+}
