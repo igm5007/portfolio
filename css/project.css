@@ -108,19 +108,45 @@
 	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
-.project-adsila .project_item .project_item-type::before, 
-.project-adsila .project_item .project_item-name::before,
-.project-adsila .project_item .project_item-label::before {
+.research .project-adsila .project_item .project_item-type::before, 
+.research .project-adsila .project_item .project_item-name::before,
+.research .project-adsila .project_item .project_item-label::before {
 	color: #ffc952;
-	color: var(--light-gold);
+
+}
+
+.strategy .project-adsila .project_item .project_item-type::before, 
+.strategy .project-adsila .project_item .project_item-name::before,
+.strategy .project-adsila .project_item .project_item-label::before {
+	color: #ff7473;
+	color: var(--salmon);
+}
+
+.ux .project-adsila .project_item .project_item-type::before, 
+.ux .project-adsila .project_item .project_item-name::before,
+.ux .project-adsila .project_item .project_item-label::before {
+	color: #47b8e0;
+	color: var(--dark-sky-blue);
 }
 
 /* Hover */
 
-.project-adsila .project_item:hover,
-.project-adsila .project_item:focus {
+.research .project-adsila .project_item:hover,
+.research .project-adsila .project_item:focus {
 	color: #ffc952;
 	color: var(--light-gold);
+}
+
+.strategy .project-adsila .project_item:hover,
+.strategy .project-adsila .project_item:focus {
+	color: #ff7473;
+	color: var(--salmon);
+}
+
+.ux .project-adsila .project_item:hover,
+.ux .project-adsila .project_item:focus {
+	color: #47b8e0;
+	color: var(--dark-sky-blue);
 }
 
 .project-adsila .project_item:hover .project_item-name::before,
