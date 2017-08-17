@@ -1,0 +1,153 @@
+.project-block {
+	width: 33.667%;
+	height: 300px;
+	float: left;
+	
+}
+
+.project-info-wrapper {
+	display: table;
+	width: 60%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	outline: none;
+	z-index: 10;
+}
+
+.project-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.project_item-name,
+.project_item-label {
+	position: relative;
+	display: inline-block;
+}
+
+.project_item-name {
+	font-size: 48px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-stretch: condensed;
+	margin-top: 3px;
+}
+
+.project_item-label {
+	font-family: "OpenSans", sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.44;
+	margin-top: 10px;
+}
+
+.project_item-type {
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	font-stretch: condensed;
+	width: 100%;
+}
+
+.project-adsila {
+
+
+}
+
+.project-adsila a {
+	color: #34314c;
+	color: var(--dark);
+}
+
+.project-adsila .project_item-type {
+	transition: color 0.5s;
+}
+
+
+
+.project-adsila .project_item-name {
+	padding-right: 0.35em;
+	font-weight: bold;
+	transition: color 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.project-adsila .project_item-name::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	bottom: 0;
+	opacity: 0.3;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.project-adsila .project_item-label {
+	transition: transform 0.5s, color 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.project-adsila .project_item-label::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 25%;
+	height: 1px;
+	left: 0.05em;
+	top: 1.25em;
+	opacity: 0.3;
+	transform: scale3d(0,1,1);
+	transform-origin: 100% 50%;
+	transition: transform 0.5s;
+	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.project-adsila .project_item .project_item-type::before, 
+.project-adsila .project_item .project_item-name::before,
+.project-adsila .project_item .project_item-label::before {
+	color: #ffc952;
+	color: var(--light-gold);
+}
+
+/* Hover */
+
+.project-adsila .project_item:hover,
+.project-adsila .project_item:focus {
+	color: #ffc952;
+	color: var(--light-gold);
+}
+
+.project-adsila .project_item:hover .project_item-name::before,
+.project-adsila .project_item:focus .project_item-name::before,
+.project-adsila .project_item:hover .project_item-label::before,
+.project-adsila .project_item:focus .project_item-label::before {
+	transform: scale3d(1,1,1);
+}
+
+.project-adsila .project_item:hover .project_item-label,
+.project-adsila .project_item:focus .project_item-label {
+	transform: translate3d(0,0,0);
+}
+
+.project-adsila .project_item:hover .project_item-label::before,
+.project-adsila .project_item:focus .project_item-label::before {
+	transition-timing-function: ease;
+	transform-origin: 0% 50%;
+}
+
+@media only screen and (max-device-width : 768px) {
+	.project-image-block {
+		width: 0%;
+	}
+
+	.project-block {
+		width: 100%;
+	}
+
+}
