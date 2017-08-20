@@ -111,22 +111,22 @@
 .research .project-adsila .project_item .project_item-type::before, 
 .research .project-adsila .project_item .project_item-name::before,
 .research .project-adsila .project_item .project_item-label::before {
-	color: #ffc952;
-
+	background: #ffc952;
+	background: var(--light-gold);
 }
 
 .strategy .project-adsila .project_item .project_item-type::before, 
 .strategy .project-adsila .project_item .project_item-name::before,
 .strategy .project-adsila .project_item .project_item-label::before {
-	color: #ff7473;
-	color: var(--salmon);
+	background: #ff7473;
+	background: var(--salmon);
 }
 
 .ux .project-adsila .project_item .project_item-type::before, 
 .ux .project-adsila .project_item .project_item-name::before,
 .ux .project-adsila .project_item .project_item-label::before {
-	color: #47b8e0;
-	color: var(--dark-sky-blue);
+	background: #47b8e0;
+	background: var(--dark-sky-blue);
 }
 
 /* Hover */
