@@ -229,31 +229,80 @@ h3 {
 #section-contact {
 	width: 100%;
 	height: 300px;
-	background-color: #ffffff;
-	background-color: var(--white);
+	background-image: url("../img/contact3.jpg");
+	background-position: center;
+	overflow: hidden;
+	margin-left: 50%;
+	transform: translateX(-50%);
 	float: left;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.contact_block {
+	width: 32.667%;
+	height: 300px;
+	overflow: hidden;
+	float: left;
+}
+
+.contact_item-wrapper {
+	display: table;
+	width: 80%;
+	height: 100%;
+	margin-left: 15%;
+	
+}
+
+.contact_items {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.contact_item {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.contact_item-name {
+	font-family: "Roboto", sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
+}
+
+@media only screen and (min-device-width : 1024px) {
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
 	.skill-block {
 		width: 49%;
 	}
 
 	.skill-block-dis-one {
-		width: 0%;
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
 	}
 
 	.skill-block-dis-two {
 		width: 49%;
 	}
 
+	.skill-margin {
+		margin-right: 0;
+	}
+
 	.project-image-block {
 		width: 49%;
 	}
 
-	.project-block {
+	.contact_block {
 		width: 49%;
+
 	}
+
 
 }
 
@@ -323,5 +372,76 @@ h3 {
 		overflow: hidden;
 		margin-left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.contact_block {
+		width: 100%;
+
+	}
+}
+
+@media only screen and (max-width : 768px) {
+
+	.intro-text {
+		visibility: hidden;
+	}
+	#intro {
+		width: 80%;
+		margin-left: 4.1665%;
+		margin-top: 125%;
+	}
+
+	.section-break {
+		height: 0%;
+		width: 0%;
+
+	}
+
+	.section-skills {
+		width: 100%;
+		height: 100%;
+		background-color: #ffffff;
+		background-color: var(--white);
+		float: left;
+		margin-bottom: 1%;
+	}
+
+	.section-skills-wrapper {
+		height: 100%;
+		width: 100%;
+	}
+
+	.skill-block {
+		width: 100%;
+	}
+
+	.skill-block-dis-one {
+		width: 0%;
+
+	}
+
+	.skill-block-dis-two {
+		width: 0%;
+
+	}
+
+	.skill-margin {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	#cover {
+		width: 100%;
+		height: 650px;
+		background-image: url("../img/morrow_working_filter.jpg");
+		background-position: center;
+		overflow: hidden;
+		margin-left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.contact_block {
+		width: 100%;
+
 	}
 }

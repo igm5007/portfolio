@@ -167,12 +167,39 @@
 	transform-origin: 0% 50%;
 }
 
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+	.project-block {
+		width: 49%;
+	}
+
+}
+
 @media only screen and (max-device-width : 768px) {
 	.project-image-block {
 		width: 0%;
 	}
 
 	.project-block {
+		width: 100%;
+	}
+
+	.project_item {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width : 768px) {
+	.project-image-block {
+		width: 0%;
+	}
+
+	.project-block {
+		width: 100%;
+	}
+
+	.project_item {
 		width: 100%;
 	}
 

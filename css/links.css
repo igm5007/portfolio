@@ -1,7 +1,5 @@
 .link {
-	margin-top: 46px;
-	margin-right: 8.333%;
-	float: right;
+
 	z-index: 10;
 }
 
@@ -9,7 +7,8 @@
 	position: relative;
 	display: block;
 	outline: none;
-	margin: 0 0.6em 2em;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
 	line-height: 1;
 	float: left;
 }
@@ -21,11 +20,20 @@
 }
 
 .link_item-name {
-
+	font-family: "Roboto", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	font-stretch: condensed;
+	color: #34314c;
+	color: var(--dark);
 }
 
 .link_item-label {
-	margin: 0 0 0 0.5em;
+	font-family: "OpenSans", sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.44;
+
 }
 
 .link-adsila {
@@ -33,7 +41,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	font-stretch: condensed;
-	text-align: center;
+
 }
 
 .link-adsila a {
@@ -65,8 +73,6 @@
 }
 
 .link-adsila .link_item-label {
-	font-size: 1em;
-	letter-spacing: 0.05em;
 	transform: translate3d(-0.5em,0,0);
 	transition: transform 0.5s, color 0.5s;
 	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
@@ -134,4 +140,33 @@
 	.link-adsila .link_item-name {
 		padding: 0;
 		text-align: left;
+	}
+
+	.link-adsila .link_item-label {
+		
+		visibility: hidden;
+	}
+
+@media only screen and (max-width : 768px) {
+
+	.link {
+		margin-top: 4.1665%;
+		margin-left: 4.1665%;
+		float: left;
+	}
+
+	.link_item {
+		float: left;
+		width: 100%;
+		margin: 0.625em 0 0;
+	}
+
+	.link-adsila .link_item-name {
+		padding: 0;
+		text-align: left;
+	}
+
+	.link-adsila .link_item-label {
+		
+		visibility: hidden;
 	}
